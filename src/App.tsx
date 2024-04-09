@@ -1,6 +1,5 @@
 import 'product-variants-react/dist/bundle.css';
 import { Variations, VariationProvider } from 'product-variants-react';
-import generateId from 'product-variants-react/src/utils';
 
 export default function App() {
   return (
@@ -8,76 +7,72 @@ export default function App() {
       store={{
         variations: [
           {
-            id: generateId(),
+            id: 'customSizeId',
             name: 'size',
             title: 'Tamaño',
             usage: true,
-            values: [],
           },
           {
-            id: generateId(),
+            id: 'customColorId',
             name: 'color',
             title: 'Color',
             usage: true,
-            values: [],
           },
           {
-            id: generateId(),
+            id: 'customStyleId',
             name: 'material',
             title: 'Material',
             usage: false,
-            values: [],
           },
           {
-            id: generateId(),
+            id: 'customPatternId',
             name: 'style',
             title: 'Estilo',
             usage: false,
-            values: [],
           },
           {
-            id: generateId(),
+            id: 'customLengthId',
             name: 'pattern',
             title: 'Patrón',
             usage: false,
-            values: [],
           },
           {
-            id: generateId(),
+            id: 'customWidthId',
             name: 'length',
             title: 'Longitud',
             usage: false,
-            values: [],
           },
           {
-            id: generateId(),
+            id: 'customHeightId',
             name: 'width',
             title: 'Ancho',
             usage: false,
-            values: [],
           },
         ],
         variationsSelected: [
           {
-            id: generateId(),
+            id: 'customSizeId',
             name: 'size',
             title: 'Tamaño',
             usage: true,
             values: [
-              { id: generateId(), title: 'S' },
-              { id: generateId(), title: 'M' },
-              { id: generateId(), title: 'L' },
+              { id: 'medium', title: 'X' },
+              { id: 'large', title: 'XL' },
+              { id: 'small', title: 'S' },
+              { id: 'extra-large', title: 'XXL' },
+              { id: 'extra-small', title: 'XS' },
             ],
           },
           {
-            id: generateId(),
+            id: 'customColorId',
             name: 'color',
             title: 'Color',
             usage: true,
             values: [
-              { id: generateId(), title: 'Red' },
-              { id: generateId(), title: 'Blue' },
-              { id: generateId(), title: 'Green' },
+              { id: 'blue', title: 'Azul' },
+              { id: 'red', title: 'Rojo' },
+              { id: 'green', title: 'Verde' },
+              { id: 'yellow', title: 'Amarillo' },
             ],
           },
         ],
